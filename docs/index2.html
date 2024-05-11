@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esta pagina habla sobre la serie Daredevil">
+  <title>Mastermind</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<header id="Inicio">
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <a class="navbar-brand" href="#">
+      <img src="img/anuncio.png" alt="MasterMind" width="40">
+    </a>
+     Acceso a <strong>TODO el CONTENIDO</strong> por <strong>SOLO 12.99€</strong>| Cancela cuando quieras.
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</header>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<nav class="navbar sticky-top navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#Inicio">
+      <img src="img/logo.png" alt="MasterMind" width="200">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CURSOS
+          </a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item text" href="#">DESARROLLO</a></li>
+            <li><a class="dropdown-item text" href="#">INFORMÁTICA</a></li>
+            <li><a class="dropdown-item text" href="#">CIBERSEGURIDAD</a></li>
+            <li><a class="dropdown-item text" href="#">MAKER</a></li>
+            <li><a class="dropdown-item text" href="#">CREATIVO</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="#Pagos">PRECIOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#FAQS">FAQS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#Login">INICIAR SESIÓN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="card bg-dark text-black text-center">
+  <img src="img/banner.png" class="card-img" alt="..." height="350">
+  <div class="card-img-overlay">
+    <h1 class="card-title">Aprende algo nuevo cada dia</h1>
+    <p class="card-text">Sin salir de tu casa , cuando quieras.</p>
+    <a href="#Pagos" class="btn btn-primary bg-danger">¡Suscríbete!</a>
+    <a href="#FAQ" class="btn btn-primary text-danger bg-white">Más información</a>
+  </div>
+</div>
+
+<h1 class="text-center mt-5">Últimos cursos publicados</h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso1.jpg" class="card-img-top" alt="curso1">
+        <div class="card-body">
+          <h5 class="card-title">Introducción a Redes Informáticas</h5>
+          <p class="card-text">Arturo</p>
+          <p class="card-text"> Profesor acreditado</p>
+          <p class="card-text">Informatica</p>
+          <p class="card-text">2 Horas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso2.jpg" class="card-img-top" alt="curso2">
+        <div class="card-body">
+          <h5 class="card-title">Fundamentos de Matemáticas para Informáticos</h5>
+          <p class="card-text">David</p>
+          <p class="card-text">Profesor acreditado</p>
+          <p class="card-text">Desarrollo</p>
+          <p class="card-text">7 Horas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diagnóstico de Hardware Avanzado</h5>
+          <p class="card-text">Arturo</p>
+          <p class="card-text"> Profesor acreditado</p>
+          <p class="card-text">Informatica</p>
+          <p class="card-text">3 Horas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center mt-5">Los cursos mejor valorados</h1>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/curso4.jpeg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title
+          ">Aprende a programar con Python</h5>
+          <p class="card-text"></p>
+          <p class="card-text">Nate Gentile</p>
+          <p class="card-text"> Youtuber</p>
+          <p class="card-text">¿No sabes programar? Mejor, porque en este curso vamos a empezar desde cero. Un curso pensado para todas las personas de todas las edades, independientemente de su nivel.</p>
+          <p class="card-text">Desarrollo</></p>
+          <p class="card-text">Duración: 12 Horas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso5.png" class="card-img-top" alt="curso5">
+        <div class="card-body">
+          <h5 class="card-title">Crea páginas web con HTML y CSS</h5>
+          <p class="card-text">Paco</p>
+          <p class="card-text"> Profesor acreditado</p>
+          <p class="card-text">Desarrollo</p>
+          <p class="card-text">11 Horas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso6.jpeg" class="card-img-top" alt="curso6">
+        <div class="card-body">
+          <h5 class="card-title">Como protegerse en la red</h5>
+          <p class="card-text">Kike</p>
+          <p class="card-text"> Youtuber</p>
+          <p class="card-text">Ciberseguridad</p>
+          <p class="card-text">8 Horas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <img src="img/curso7.jpg" class="card-img-top" alt="curso7">
+        <div class="card-body">
+          <h5 class="card-title">Eligiendo los componentes de tu nuevo PC (Edición 2024)</h5>
+          <p class="card-text">Arturo</p>
+          <p class="card-text">Profesor acreditado</p>
+          <p class="card-text">Informatica</p>
+          <p class="card-text">3 Horas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-danger" role="alert">
++ de 50.000 Alumnos     &nbsp;&nbsp;&nbsp;&nbsp;+ de 450 Horas de contenido&nbsp; &nbsp;&nbsp;&nbsp;     + de 70 Cursos   
+  </div>
+  
+  </div>
+
+
+  <h1 class="text-center mt-5" id="Pagos">Accede a TODOS los cursos las veces que quieras</h1>
+  <h2 class ="text-center mt-5"> Sin salir de tu casa. Cancela cuando quieras.</h2>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Mensual</h5>
+          <p class="card-text">€12.99</p>
+          <p class="card-text">Acceso a todos los cursos</p>
+          <a href="#Pagos" class="btn btn-primary bg-danger">¡Suscríbete!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Trimestral</h5>
+          <p class="card-text">€34.99</p>
+          <p class="card-text">11.66€ /mes</p>
+          <p class="card-text">Acceso a todos los cursos</p>
+          <a href="#Pagos" class="btn btn-primary bg-danger">¡Suscríbete!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Anual</h5>
+          <p class="card-text">€129.99</p>
+          <p class="card-text">10.83€ /mes</p>
+          <p class="card-text">Acceso a todos los cursos</p>
+          <a href="#Pagos" class="btn btn-primary bg-danger">¡Suscríbete!</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center mt-5">¿Quieres un curso para siempre?</h2>
+  <h3 class="text-center mt-5">Dirígete a la página dedicada al curso que deseas y consulta su precio</h3>
+
+  <h1 id="FAQ">Preguntas Frecuentes</h1>
+  <!-- Acordeon con 8 preguntas-->
+  <div class="accordion" id="FAQS">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Qué es MasterMind?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Mastermind es un entorno de formación online donde encontrarás cursos sobre diferentes áreas de aprendizaje de informática y tecnología:
+
+          - Maker
+          - Informática
+          - Desarrollo
+          - Ciberseguridad
+          - Creativo
+          
+          Cada rama está compuesta por rutas de aprendizaje y clusters que te permitirán adquirir conocimientos de forma guiada y ordenada, avanzando por niveles mientras ganas medallas y completas logros de aprendizaje. Además, cuenta con grupos de discusiones y soporte al alumnado.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Cómo funciona una suscripción? Puedo comprar cursos un unico curso?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Con la adquisición de una suscripción tienes acceso a todos los cursos disponibles de forma mensual, trimestral o anual, consulta los precios haciendo clic aquí.
+
+          También puedes comprar nuestros cursos de forma individual, tendrás acceso indefinido al contenido y a sus futuras actualizaciones por un pago único. El acceso al curso será a través de la plataforma online de Mastermind.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Me vais a ayudar si tengo dudas? Teneis foro?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Resolvemos dudas sobre el contenido de los cursos en las discusiones de cada clase.
+
+          Si tienes preguntas sobre el curso, quieres iniciar un debate, o comentar cualquier cuestión, deja tu pregunta/comentario en las discusiones de la propia clase y los docentes te responderán en un plazo de 48/72 horas.
+          
+          Además, siempre puedes realizar consultas sobre la plataforma escribiendo a soporte@mastermind.ac o a través del chat habilitado de 09:00 a 18:00 (UCT+1) de L-V.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ¿Cuáles son los métodos de pago disponibles?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Puedes abonar el importe de cualquier plan de suscripción a través de tarjeta de crédito o débito, las tarjetas aceptadas son Visa y Mastercard.
+
+          Para la compra única por curso también está disponible el pago a través de PayPal. Para realizar la compra debes dirigirte a la página del curso que te interesa y acceder a la pasarela de pagos desde el botón ¡Comprar!
+          
+          *La suscripción se renueva de forma automática. Puedes cancelar desde Mi Perfil> Facturación >Cancelar suscripción
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          ¿Como es nuestra metodología online?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Nuestros cursos están grabados bajo unos estándares de calidad diseñados por un equipo pedagógico e impartidos por personas expertas. Todo el contenido está disponible para ti 24 horas al día, sin horarios ni límites.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          ¿Como es nuestro proceso de aprendizaje?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+
+          Siguiendo nuestros principios de calidad educativa y audiovisual hemos ideado un proceso de aprendizaje basado en rutas de contenido guiadas para obtener el mayor nivel de conocimiento siguiendo un orden lógico, teórico y práctico. Podrás aprender desde 0 determinadas disciplinas e ir avanzando en tu aprendizaje superando retos, alcanzando nuevos niveles y obteniendo medallas.
+
+          Cada curso cuenta con pruebas, retos y proyecto final para poner en práctica todo lo enseñado y evaluar de forma entretenida todo lo aprendido, ¡siempre acompañado por nuestros docentes!
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          ¿Cada cuanto se publica nuevo contenido?
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Cada mes, se publicarán entre uno y tres cursos nuevos (en la medida de lo posible).
+
+          Os enviaremos toda la información sobre las nuevas publicaciones a vuestro correo electrónico a través de una Newsletter.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          ¿Por donde empiezo?
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#FAQS">
+        <div class="accordion-body">
+          Es importante que antes de comenzar tengas una ligera idea de qué rama te interesa más. Una vez seleccionada, nuestra interfaz web te irá guiando por los cursos recomendados, si aun así te surgen dudas, no dudes en contactar con nuestro personal de soporte.
+
+          Si ya tienes conocimientos previos, y deseas mejorarlos, te aconsejamos que navegues por nuestros mapas y rutas de contenido para revisar que tienes la base necesaria, o bien refrescar conocimientos.
+          
+          ¡Recuerda! Tienes acceso a todo el contenido independientemente de tus preferencias de aprendizaje, no dejes de navegar por la web, recorrer nuestras rutas y perderte entre las diferentes ramas, ¡involúcrate y aprende!
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="img/final.png" class="card-img" alt="final">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Si no es ahora, ¿cuándo?</h5>
+          <p class="card-text">Los mejores profesores están deseando enseñarte.</p>
+          <a href="#Pagos" class="btn btn-primary bg-danger">¡Suscríbete!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        
+
+
+  
+
+
+
+</body>
+</html>
